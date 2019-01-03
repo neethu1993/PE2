@@ -5,13 +5,15 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
 
 @RunWith(JUnit4.class)
 public class StudentAvgGradeTest {
+    StudentAvgGrade obj;
     @Before
     public void setUp() {
         //System.out.println("Inside setup");
-        StudentAvgGrade obj = new StudentAvgGrade();
+       obj = new StudentAvgGrade();
     }
     @Test
     public void StudentAvgTestSuccess()
@@ -29,11 +31,12 @@ public class StudentAvgGradeTest {
 
         assertEquals(expectedValueMax,actualValueMax);
 
-        String expectedValueAvg="81.50";
+        float expectedValueAvg= (float) 81.50;
 
-        String  actualValueAvg=obj.StudentAvg(4,arr);
+        float  actualValueAvg= obj.StudentAvg(4,arr);
 
-        assertEquals(expectedValueAvg,actualValueAvg);
+//        assertEquals(expectedValueAvg,actualValueAvg);
+        assertEquals(expectedValueAvg,actualValueAvg,81.502);
 
     }
 
@@ -45,21 +48,21 @@ public class StudentAvgGradeTest {
 
         int  actualValueMin=obj.StudentMin(4,arr);
 
-        assertEquals(expectedValueMin,actualValueMin);
+        assertNotEquals(expectedValueMin,actualValueMin);
 
-        int expectedValueMax=-1;
+
 
         int expectedValueMax=-1;
 
         int  actualValueMax=obj.StudentMax(4,arr);
 
-        assertEquals(expectedValueMax,actualValueMax);
+        assertNotEquals(expectedValueMax,actualValueMax);
 
-        String expectedValueAvg="-1";
+        float expectedValueAvg= -1;
 
-        String  actualValueAvg=obj.StudentAvg(4,arr);
+        float  actualValueAvg= obj.StudentAvg(4,arr);
 
-        assertEquals(expectedValueAvg,actualValueAvg);
+        assertNotEquals(expectedValueAvg,actualValueAvg,-1);
 
     }
 

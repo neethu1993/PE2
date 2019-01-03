@@ -6,10 +6,11 @@ import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.*;
 
 public class PowerOfFourTest {
+    PowerOfFour object;
     @Before
     public void setUp()
     {
-        PowerOfFour object = new PowerOfFour();
+         object = new PowerOfFour();
     }
 
     @After
@@ -29,11 +30,11 @@ public class PowerOfFourTest {
 
     @Test
     public void testFailure() throws Exception{
-        String expectedValue = "Power of 4";
+        String expectedValue = "Not a Power of 4";
         //Act
         String actualValue = object.reverse(10);
         //Assert
-        assertNotEquals(expectedValue,actualValue);
-    }
+        assertEquals(expectedValue,actualValue);
     }
 }
+

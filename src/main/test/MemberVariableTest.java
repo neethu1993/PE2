@@ -7,19 +7,11 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNull;
 
 public class MemberVariableTest {
-import static org.junit.Assert.*;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
-import static junit.framework.TestCase.assertEquals;
-
-    public class MemberVariableTest {
-        @Before
+    MemberVariable object;
+    @Before
         public void setUp()
         {
-            MemberVariable object = new MemberVariable();
+             object = new MemberVariable();
         }
 
         @After
@@ -59,14 +51,14 @@ import static junit.framework.TestCase.assertEquals;
             assertNull(actualName);
 
             //Act
-            int actualAge = object.MemberAge(null);
+            int actualAge = object.MemberAge(0);
             //Assort
-            assertNull(actualAge);
+            assertEquals(0,actualAge);
 
             //Act
             String actualSalary = object.MemberSalary(null);
             //Assort
             assertNull(actualSalary);
         }
-    }
 }
+

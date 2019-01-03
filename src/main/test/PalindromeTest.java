@@ -7,10 +7,11 @@ import org.junit.Test;
 import static junit.framework.TestCase.assertEquals;
 
 public class PalindromeTest {
+    Palindrome object;
     @Before
     public void setUp()
     {
-        Palindrome object = new Palindrome();
+        object = new Palindrome();
     }
 
     @After
@@ -31,10 +32,10 @@ public class PalindromeTest {
 
     @Test
     public void testFailure() throws Exception{
-        String expectedValue = "Palindrome";
+        String expectedValue = "Not Palindrome";
         //Act
         String actualValue = object.reverse("abcd");
         //Assert
-        assertNotEquals(expectedValue,actualValue);
+        assertEquals(expectedValue,actualValue);
     }
 }
