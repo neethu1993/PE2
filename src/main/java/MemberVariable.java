@@ -1,7 +1,9 @@
 
 public class MemberVariable {
     Member object;
+    //getting the variable from Member class
     public MemberVariable(){
+
         object = new Member();
     }
     public String MemberName(String name){

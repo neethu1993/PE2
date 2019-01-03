@@ -1,5 +1,6 @@
 public class EvenNum {
     public static boolean reverse(int num){
+        //checking for even
         if(num % 2 == 0){
             return true;
         }
