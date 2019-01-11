@@ -1,3 +1,6 @@
+package com.stackroute.pe2;
+
+import com.stackroute.pe2.MemberVariable;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

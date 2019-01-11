@@ -1,4 +1,9 @@
+package com.stackroute.pe2;
+
 public class IntegerFactorial {
+    /*
+    method to get factorial of a number
+     */
     public String getFactorial(int num){
      String string ="";
      int factInitial = 1;
@@ -8,6 +13,5 @@ public class IntegerFactorial {
          string = string +"The factorial of" +" "+ i +" "+"is" +" "+ factInitial+"\n";
      }
      return string;
-
     }
 }

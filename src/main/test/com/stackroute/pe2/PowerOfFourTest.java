@@ -1,9 +1,11 @@
+package com.stackroute.pe2;
+
+import com.stackroute.pe2.PowerOfFour;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
-import static org.junit.Assert.*;
 
 public class PowerOfFourTest {
     PowerOfFour object;

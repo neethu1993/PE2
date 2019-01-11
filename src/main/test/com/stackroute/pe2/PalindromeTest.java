@@ -1,5 +1,6 @@
-import static org.junit.Assert.*;
+package com.stackroute.pe2;
 
+import com.stackroute.pe2.Palindrome;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -23,7 +24,7 @@ public class PalindromeTest {
     @Test
     public void testSuccess() throws Exception{
 
-        String expectedValue = "Palindrome";
+        String expectedValue = "com.stackroute.pe2.Palindrome";
         //Act
         String actualValue = object.reverse("abcdcba");
         //Assert
@@ -32,7 +33,7 @@ public class PalindromeTest {
 
     @Test
     public void testFailure() throws Exception{
-        String expectedValue = "Not Palindrome";
+        String expectedValue = "Not com.stackroute.pe2.Palindrome";
         //Act
         String actualValue = object.reverse("abcd");
         //Assert

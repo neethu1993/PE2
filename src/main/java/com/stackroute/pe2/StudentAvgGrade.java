@@ -1,5 +1,9 @@
+package com.stackroute.pe2;
+
 public class StudentAvgGrade {
-    //getting the minimium value
+    /*
+    getting the minimium value
+     */
     public int StudentMin(int num, int arr[]){
         int min = arr[0];
         for(int i = 0; i < num; i++){
@@ -11,7 +15,9 @@ public class StudentAvgGrade {
         return min;
 
     }
-    //getting maximum value
+    /*
+    getting maximum value
+     */
     public int StudentMax(int num, int arr[]){
         int max = arr[0];
         for(int i = 0; i < num; i++){
@@ -22,9 +28,10 @@ public class StudentAvgGrade {
         }
         return max;
     }
-    //getting the average
+    /*
+    getting the average
+     */
     public float StudentAvg(int num , int arr[]){
-
         int sum = 0;
         if(num != 0) {
             for (int i = 0; i < num; i++) {
@@ -35,5 +42,4 @@ public class StudentAvgGrade {
         else
             return -1;
     }
-
 }

@@ -1,4 +1,9 @@
+package com.stackroute.pe2;
+
 public class PowerOfFour {
+    /*
+  method to check for a number to be power of 4
+   */
     String reverse(int num){
         if(num == 0)
             return "0";

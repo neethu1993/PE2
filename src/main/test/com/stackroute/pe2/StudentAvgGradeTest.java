@@ -1,3 +1,6 @@
+package com.stackroute.pe2;
+
+import com.stackroute.pe2.StudentAvgGrade;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
