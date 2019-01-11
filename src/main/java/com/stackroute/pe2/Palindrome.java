@@ -1,8 +1,9 @@
+/*Write a Java method to Reverse the given input & Check if it is a Palindrome*/
 package com.stackroute.pe2;
 
 public class Palindrome {
     /*
-    method to checkfor palindrome
+    method to check for palindrome
      */
     public String reverse(String string) {
         int length = string.length();
